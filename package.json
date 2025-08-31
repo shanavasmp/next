@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start",
-    "lint": "eslint"
+  "dev": "next dev --turbopack",
+  "build": "next build --turbopack && next export",
+  "start": "next start",
+  "lint": "eslint",
+  "deploy": "gh-pages -d out",
+  "homepage": "https://shanavasmp.github.io/next"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.12",
