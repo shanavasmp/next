@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+p{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+span{
+ font-family: 'Poppins', sans-serif; 
+}
+li{
+font-family: 'Poppins', sans-serif;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 6s linear infinite; /* Adjust duration for speed */
+}
+
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+
+/* Tablet */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 44px;
+    line-height: 56px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 56px;
+    line-height: 72px;
+  }
+}
